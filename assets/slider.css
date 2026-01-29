@@ -1,0 +1,130 @@
+.bp-tslider {
+	position: relative;
+	padding: 28px 18px;
+	border-radius: 14px;
+	overflow: hidden;
+
+	/* Transparent so any underlying theme/section background image is visible */
+	background: transparent;
+	color: #fff;
+
+	/* Improve legibility on busy backgrounds */
+	text-shadow: 0 2px 10px rgba(0,0,0,0.65);
+}
+
+.bp-tslider__overlay {
+	/* No dark overlay: keep background image visible */
+	position: absolute;
+	inset: 0;
+	background: transparent;
+}
+
+.bp-tslider__viewport {
+	position: relative;
+	overflow: hidden;
+}
+
+.bp-tslider__track {
+	display: flex;
+	will-change: transform;
+	transition: transform 450ms ease;
+}
+
+.bp-tslider__slide {
+	min-width: 100%;
+	padding: 10px 0;
+}
+
+.bp-tslider__inner {
+	position: relative;
+	margin: 0 auto;
+	max-width: 860px;
+	padding: 18px 18px 16px;
+	border-radius: 14px;
+
+	/* Transparent card */
+	background: transparent;
+	backdrop-filter: none;
+}
+
+.bp-tslider__avatar {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	object-fit: cover;
+	display: block;
+	margin-bottom: 12px;
+	border: 2px solid rgba(255,255,255,0.55);
+}
+
+.bp-tslider__text p { margin: 0 0 10px; }
+.bp-tslider__text p:last-child { margin-bottom: 0; }
+
+.bp-tslider__cite {
+	display: inline-block;
+	margin-top: 12px;
+	font-style: normal;
+	font-weight: 700;
+	opacity: 0.98;
+}
+
+.bp-tslider__controls {
+	position: relative;
+	margin-top: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+}
+
+.bp-tslider__btn {
+	appearance: none;
+	border: 1px solid rgba(255,255,255,0.35);
+	background: rgba(0,0,0,0.25);
+	color: #fff;
+	width: 44px;
+	height: 40px;
+	border-radius: 10px;
+	cursor: pointer;
+	line-height: 1;
+	font-size: 26px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-shadow: none;
+}
+
+.bp-tslider__btn:hover {
+	background: rgba(0,0,0,0.35);
+}
+
+.bp-tslider__btn:focus-visible {
+	outline: 2px solid rgba(255,255,255,0.85);
+	outline-offset: 2px;
+}
+
+.bp-tslider__dots {
+	display: inline-flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.bp-tslider__dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 999px;
+	border: 1px solid rgba(255,255,255,0.6);
+	background: rgba(0,0,0,0.25);
+	cursor: pointer;
+	padding: 0;
+}
+
+.bp-tslider__dot[aria-current="true"] {
+	transform: scale(1.15);
+	background: rgba(255,255,255,0.95);
+}
+
+@media (max-width: 480px) {
+	.bp-tslider { padding: 22px 14px; border-radius: 12px; }
+	.bp-tslider__inner { padding: 16px 14px; }
+}
