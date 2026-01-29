@@ -1,1 +1,13 @@
+.bp-tslider-field { max-width: 640px; }
+.bp-tslider-preview {
+	width: 100%;
+	height: 160px;
+	border: 1px solid #c3c4c7;
+	border-radius: 6px;
+	background-color: #f6f7f7;
+	background-size: cover;
+	background-position: center;
+	margin: 8px 0 10px;
+}
+.bp-tslider-buttons { display: flex; gap: 12px; align-items: center; }
 
