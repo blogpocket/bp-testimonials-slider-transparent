@@ -2,7 +2,7 @@
 /**
  * Plugin Name: BP Testimonials Slider
  * Description: Carrusel de testimonios mediante shortcode, con tipo de contenido "Testimonios" y opciones de visualización.
- * Version: 1.0.0
+ * Version: 1.1.3
  * Author: Blogpocket
  * License: GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 final class BP_Testimonials_Slider {
 
-	const VERSION     = '1.0.0';
+	const VERSION     = '1.1.3';
 	const CPT         = 'bp_testimonial';
 	const OPTION_KEY  = 'bp_tslider_options';
 	const NONCE_FIELD = 'bp_tslider_nonce';
